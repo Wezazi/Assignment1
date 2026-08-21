@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <h2>Introduction</h2>
+    <p>I will be comparing block level elements with inline elements.</p>
+    <p>P elements are block level</p>
+    <p>Span elements are inline</p>
+
+    
+    <h2>P element preceded and followed by span element:</h2>
+
+        <span>This is the preceding span element</span>
+        <p>This is the P element</p>
+        <span>This is the follwing span element</span>
+
+    <h2>P element followed by a second P element:</h2>
+
+        <p>This is the first P element</p>
+        <p>This is the second P element</p>
+
+
+    <h3>Observation:</h3>
+    
+        <p>
+            Block level elements are automatically seperated from other elements (both block and inline elmenets) by a newline.
+        </p>
+    
+
+    <h2>Span element followed by a second Span element:</h2>
+    
+        <span>This is the first span element</span> 
+        <span>This is the second span element</span>
+
+    <h3>Observation:</h3>
+
+        <P>
+            inline elements preceded or followed by other inline element will not be automatically seperated by a newline. <br>
+            To seperate inline elements by a newline, you need to explicitly set a &lt;br&gt; element before or after the inline element.
+        </P>
+
+
+    <h2>P element with a nested P element:</h2>
+
+        <p>
+            before nested p
+            <p>within nested p</p>
+            after nested p
+        </p>
+
+    <h2>span element with a nested span element:</h2>
+
+        <span>
+            before nested span
+            <span>within nested span</span>
+            after nested span
+        </span>
+
+    
+    <h2>P element with a nested span element:</h2>
+    <p>
+        This is before the nested span element
+        <span>This is within the nested span element</span>
+        This is after the nested span element
+    </p>
+
+    <h2>Span element with a nested p element:</h2>
+
+    <span>
+        This is before the nested P element
+        <p>This is within the nested P element</p>
+        This is after the nested P element
+    </span>
+
+    <h3>Observation:</h3>
+    <p>Block level elements are always seperated from other elements regardless if nested or not and regardless if block or inline<br> <br>If a Inline element is nested within a block level element, it won't get seperated from the block level element, it will behave as if it's part of the parent element</p>
+
+</body>
+</html>
